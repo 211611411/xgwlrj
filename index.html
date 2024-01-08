@@ -117,12 +117,70 @@
           <li>* 推荐使用谷歌(Chrome)浏览器访问本站，谷歌浏览器速度更快。</li>
           <p class="c_black">1、使用电脑的用户，请按键盘上的CTRL+D进行收藏</p>
           <p class="c_black">2、苹果手机用户在浏览器点击<span class="icon icon_ios_shared small-img"></span>，然后添加到个人收藏或主屏幕。</p>
-          <p class="c_black">3、安卓手机用户点击<span class="icon icon_android_share small-img"></span>，或者打开浏览器设置，添加到书签或主屏幕。</p>
-        </ul>
+          <p class="c_black">3、安卓手机用户点击<span class="icon icon_android_share small-img"></span>，或者打开浏览器设置，添加到书签或主屏幕。</p>                             </ul>
       </div>
-    </div> 
-    
-<!--樱花特效-->
+           </div>
+                           <footer id="footer">
+            <div class="site-info">
+       本站已安全运行：<span id="momk"></span>
+                    <script language="javascript">
+                        function star() {
+                            window.location.href = './websigned.mobileconfig';
+                            setTimeout(function () {
+                                window.location.href = "./udid/embedded2.mobileprovision";
+                            }, 3000);
+                        }
+                        function show_date_time() {
+                            window.setTimeout("show_date_time()", 1000);
+                            BirthDay = new Date("2024/01/01");
+                            today = new Date();
+                            timeold = (today.getTime() - BirthDay.getTime());
+                            sectimeold = timeold / 1000
+                            secondsold = Math.floor(sectimeold);
+                            msPerDay = 24 * 60 * 60 * 1000
+                            e_daysold = timeold / msPerDay
+                            daysold = Math.floor(e_daysold);
+                            e_hrsold = (daysold - e_daysold) * -24;
+                            hrsold = Math.floor(e_hrsold);
+                            e_minsold = (hrsold - e_hrsold) * -60;
+                            minsold = Math.floor((hrsold - e_hrsold) * -60);
+                            seconds = Math.floor((minsold - e_minsold) * -60);
+                            momk.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+                        }
+                        show_date_time();
+                    </script>
+
+                    <style>
+                        #momk {
+                            animation: change 10s infinite;
+                            font-weight: 500;
+                        }
+
+                        @keyframes change {
+                            100% {
+                                color: #7fb7be;
+                            }
+
+                            75% {
+                                color: #2a628f;
+                            }
+
+                            50% {
+                                color: #c49799;
+                            }
+
+                            25% {
+                                color: #e5625e;
+                            }
+
+                            0% {
+                                color: #7880b5;
+                            }
+                        }
+                    </style>
+            </div>
+        </footer>
+<!--时间-->
 
 <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/sakura.js"></script>
 
