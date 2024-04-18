@@ -85,7 +85,7 @@
  
 <!--<marquee direction="left" scrollamount="9">速度</marquee>-->
 
-    <h0><marquee><div><a href="index.html" class="btn btn-primary btn-lg color=#FF0000"><b>欢迎大家访问及使用，谢谢一直以来的支持，如果不懂使用方法请看使用视频！</a></div></marquee></h0>
+    <h0><marquee><div><a href="index.html" class="btn btn-primary btn-lg color=#FF0000"><b>欢迎大家访问及使用，谢谢一直以来的支持，如果不懂使用方法请看软件使用视频！</a></div></marquee></h0>
       
       <div class="field desc">
         <h4 class="title">⊕ 临时公告</h4>
@@ -253,6 +253,34 @@
 
 <!--樱花特效-->
 <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+
+<script>
+    var title = document.title;
+        function istitle() {
+         var isHidden = document.hidden;    
+          if (isHidden) {
+        //当窗口不可见
+        document.title = '(つ ェ ⊂)我藏好了哦~';
+          } else {
+        //当窗口可见
+        document.title = '(*゜ロ゜)ノ被发现了~';
+        setTimeout("document.title=title", 3000);
+          }
+        };
+    document.addEventListener('visibilitychange', istitle);
+</script>
+
+<script>
+document.addEventListener('visibilitychange', function () {
+if (document.visibilityState == 'hidden') {
+    normal_title = document.title;
+    document.title = 'w(ﾟДﾟ)w 宝～请不要离开！';
+} else document.title = normal_title;
+});
+</script>
+
+
+
 <!--
 <script>LA.init({id:"3HGOdEIDUXF8BbnW",ck:"3HGOdEIDUXF8BbnW",autoTrack:true,hashMode:true})</script> 
 
